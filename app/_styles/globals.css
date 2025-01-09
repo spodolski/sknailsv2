@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+main color #938568
+#84785e #766a53 #675d49 #58503e #4a4334 #3b352a #2c281f #1d1b15 #0f0d0a #000000
+
+#9e9177 #a99d86 #b3aa95 #beb6a4 #c9c2b4 #d4cec3 #dfdad2 #e9e7e1 #f4f3f0 #ffffff
+*/
+
+body {
+  background-image: url("https://utjfaspanvjuqdpwbwwg.supabase.co/storage/v1/object/public/sknails/background.jpg");
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+
+  letter-spacing: 1px;
+
+  font-weight: 500;
+  font-size: 1rem;
+}
+.icon {
+  cursor: pointer;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: auto;
+  display: block;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-30deg);
+}
+
+.image-container:hover::before {
+  animation: shine 2s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@layer base {
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #4a4334;
+    border-right-color: #b3aa95;
+    animation: rotate 1s infinite linear;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+.mainBG {
+  background-color: rgb(212, 206, 195, 0.6);
+  margin-bottom: 100px;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+.buttonBook {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 150%;
+  text-align: center;
+  text-wrap: nowrap;
+  background-color: #938568;
+  border-radius: 15px;
+  border: 1px solid #2c281f;
+  padding: 5px 11px;
+  margin: 10px;
+  letter-spacing: 1px;
+  color: #2c281f;
+  max-height: max-content;
+
+  :hover& {
+    background-color: #b3aa95;
+    transition: 0.5s;
+    transform: translate(-1px, -2px);
+    box-shadow: 0 2px 6px 0 rgba(147, 133, 104, 0.4);
+  }
+  @media (max-width: 700px) {
+    font-size: 110%;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+.buttons {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 125%;
+  background-color: #c9c2b4;
+  border-radius: 10px;
+  border: 1px solid #938568;
+  padding: 6px 8px;
+  margin: 10px;
+  letter-spacing: 1px;
+  color: #3b352a;
+  height: 70%;
+  width: 90%;
+  text-wrap: nowrap;
+  flex: auto;
+  max-width: fit-content;
+  max-height: max-content;
+
+  :hover& {
+    background-color: #b3aa95;
+    transition: 0.25s;
+    transform: translate(-1px, -2px);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  @media (max-width: 700px) {
+    font-size: 90%;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+.day {
+  background-color: #938568;
+  border-radius: 25px;
+  padding: 10px;
+  margin: auto 0;
+  max-width: 350px;
+  display: flex;
+}
+.rdp-root {
+  --rdp-cell-size: auto !important;
+  --rdp-today-color: green !important;
+  --rdp-accent-color: white !important;
+  --rdp-accent-background-color: !important;
+  margin: 0 !important;
+}
