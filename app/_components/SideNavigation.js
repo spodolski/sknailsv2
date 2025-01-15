@@ -31,12 +31,12 @@ function SideNavigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-r border-primary-900">
-      <ul className="flex flex-col gap-2 h-full text-sm md:text-base lg:text-lg">
+    <nav className="md:border-r border-primary-900">
+      <ul className="flex  flex-row md:flex-col md:gap-2 h-full text-[8px] md:text-base lg:text-lg">
         {navLinks.map((link) => (
           <li key={link.name}>
             <Link
-              className={`py-3 px-5 hover:bg-primary-900 hover:text-primary-100 transition-colors flex items-center gap-4 font-semibold text-accent-500 ${
+              className={`py-1 md:py-3 px-1 md:px-2 hover:bg-primary-900 hover:text-primary-100 transition-colors flex items-center gap-1 font-semibold text-accent-500 ${
                 pathname === link.href ? "bg-primary-700" : ""
               }`}
               href={link.href}

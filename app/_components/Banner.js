@@ -6,11 +6,11 @@ function Banner() {
     <div className="">
       <div className="mx-auto relative  max-h-fit opacity-80 rounded-b-lg aspect-video overflow-hidden">
         <Image
-          className="   scale-110 object-cover"
-          src="https://utjfaspanvjuqdpwbwwg.supabase.co/storage/v1/object/public/sknails/banner.jpg"
+          className="    object-cover"
+          src=" https://utjfaspanvjuqdpwbwwg.supabase.co/storage/v1/object/public/sknails/banner.jpg"
           quality={90}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          sizes="(max-width: 400px) 100vw, (max-width: 1024px) 50vw, 33vw"
           alt={`banner`}
         />
       </div>

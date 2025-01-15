@@ -8,7 +8,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <div className="bg-primary-900/80 p-1 rounded-t-lg ">
-      <div className="flex justify-between gap-3 text-sm md:text-md lg:text-base items-center text-accent-600 max-w-[1200px]">
+      <div className="flex justify-between gap-3 text-xs md:text-md lg:text-base items-center text-accent-600 max-w-[1200px]">
         <div>
           <p className="text-center font-bold mb-6 ml-4">
             My home Nail Salon address

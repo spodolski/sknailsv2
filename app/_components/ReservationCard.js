@@ -95,9 +95,25 @@ function ReservationCard({ onDelete, booking, nailName }) {
             Booked {format(new Date(created_at), "EEE, MMM dd yyyy, p")}
           </p>
         </div>
+        <div className="flex flex-row border-t border-accent-100 gap-2 pt-2 mt-1 md:hidden">
+          {!isBefore(date, twoDays) ? (
+            <>
+              <Link
+                href={`/account/reservations/edit/${id}`}
+                className="group flex items-center gap-2 uppercase text-xs font-bold text-primary-300  flex-grow px-3 hover:bg-accent-600 transition-colors hover:text-primary-900 "
+              >
+                <PencilSquareIcon className="h-5 w-5 text-primary-600 group-hover:text-primary-800 transition-colors" />
+                <span className="text-xs md:text-sm lg:text-base mt-1">
+                  Edit
+                </span>
+              </Link>
+              <DeleteReservation onDelete={onDelete} bookingId={id} />
+            </>
+          ) : null}
+        </div>
       </div>
 
-      <div className="flex flex-col border-l border-accent-800 w-[100px]">
+      <div className="hidden md:flex flex-col border-l border-accent-800 w-[100px]">
         {!isBefore(date, twoDays) ? (
           <>
             <Link
