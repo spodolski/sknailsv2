@@ -10,7 +10,7 @@ export default async function Navigation() {
 
   const name = session?.user?.name?.split(" ");
   return (
-    <div className="flex gap-10 justify-between  h-24 md:h-36 lg:h-52   max-w-[1200px]">
+    <div className="flex gap-8 justify-between  h-24 md:h-36 lg:h-52   max-w-[1200px]">
       <Logo />
 
       <div className="flex flex-row items-center justify-end    w-3/5 mr-4">

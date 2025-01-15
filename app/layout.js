@@ -21,13 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${playfair.className}`}>
-        <header className="mx-auto max-w-7xl">
+        <header className="mx-auto max-w-[1200px]">
           <Navigation />
         </header>
-        <main className="mx-auto max-w-6xl mainBG mb-[40px] md:mb-[70px] lg:mb-[100px]">
+        <main className="mx-auto max-w-[1200px] mainBG mb-[40px] md:mb-[70px] lg:mb-[100px]">
           <ReservationProvider>{children}</ReservationProvider>
         </main>
-        <footer className="mx-auto max-w-6xl">
+        <footer className="mx-auto max-w-[1200px]">
           <Footer />
         </footer>
       </body>
