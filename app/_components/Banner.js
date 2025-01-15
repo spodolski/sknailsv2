@@ -7,7 +7,7 @@ function Banner() {
       <div className="mx-auto relative  max-h-fit opacity-80  aspect-video ">
         <Image
           className=" rounded-b-lg   object-cover"
-          src="https://utjfaspanvjuqdpwbwwg.supabase.co/storage/v1/object/public/sknails/banner.jpg"
+          src="https://utjfaspanvjuqdpwbwwg.supabase.co/storage/v1/object/public/sknails/banner.JPEG?t=2025-01-15T20%3A52%3A59.542Z"
           quality={90}
           fill
           sizes="(max-width: 400px) 100vw, (max-width: 1024px) 50vw, 33vw"
