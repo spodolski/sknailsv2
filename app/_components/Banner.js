@@ -4,9 +4,9 @@ import Link from "next/link";
 function Banner() {
   return (
     <div className="">
-      <div className="mx-auto relative  max-h-fit opacity-80 aspect-video">
+      <div className="mx-auto relative  max-h-fit opacity-80 rounded-b-lg aspect-video overflow-hidden">
         <Image
-          className="rounded-b-lg object-cover"
+          className="   scale-110 object-cover"
           src="https://utjfaspanvjuqdpwbwwg.supabase.co/storage/v1/object/public/sknails/banner.jpg"
           quality={90}
           fill

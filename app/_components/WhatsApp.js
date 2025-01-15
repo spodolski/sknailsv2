@@ -9,7 +9,10 @@ function WhatsApp() {
   };
 
   return (
-    <FaSquareWhatsapp className="text-6xl" onClick={handleWhatsAppRedirect} />
+    <FaSquareWhatsapp
+      className="text-2xl md:text-4xl lg:text-6xl"
+      onClick={handleWhatsAppRedirect}
+    />
   );
 }
 

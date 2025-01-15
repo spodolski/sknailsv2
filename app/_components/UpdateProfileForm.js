@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { updateProfile } from "../_lib/actions";
 import { useFormStatus } from "react-dom";
 
@@ -10,10 +9,10 @@ function UpdateProfileForm({ children, guest }) {
   return (
     <form
       action={updateProfile}
-      className="bg-primary-900 py-8 px-12 text-lg flex gap-6 flex-col rounded-lg"
+      className="bg-primary-900 py-8 px-12 text-sm md:text-base lg:text-lg flex gap-6 flex-col rounded-lg"
     >
       <div className="space-y-2">
-        <p className="text-lg mb-8 text-center  text-primary-200">
+        <p className=" mb-8 text-center  text-primary-200">
           Providing the following information will make your booking process
           faster and smoother. See you soon!
         </p>

@@ -40,7 +40,7 @@ function ReservationCard({ onDelete, booking, nailName }) {
   return (
     <div className="flex  border border-accent-500 bg-primary-900 rounded">
       {testNails.image && (
-        <div className="  relative h-32 mt-2 aspect-square">
+        <div className="  relative h-16 md:h-24 lg:h-32 mt-2 aspect-square">
           <Image
             src={testNails.image}
             alt={`Nails: ${testNails.name_nails}`}
@@ -51,41 +51,47 @@ function ReservationCard({ onDelete, booking, nailName }) {
       )}
       <div className="flex-grow px-6 py-3 flex flex-col">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-semibold text-accent-700">
+          <h3 className="text-sm md:text-base lg:text-lg font-semibold text-accent-700">
             Reservation #{id}
           </h3>
           {isPast(new Date(date)) ? (
-            <span className="bg-yellow-800 text-yellow-200 h-7 px-3 uppercase text-xs font-bold flex items-center rounded-sm">
+            <span className="bg-yellow-800 text-yellow-200 h-7 px-3 uppercase text-[8px] md:text-[10px] lg:text-xs font-bold flex items-center rounded-sm">
               past
             </span>
           ) : (
-            <span className="bg-green-800 text-green-200 h-7 px-3 uppercase text-xs font-bold flex items-center rounded-sm">
+            <span className="bg-green-800 text-green-200 h-7 px-3 uppercase text-[8px] md:text-[10px] lg:text-xs font-bold flex items-center rounded-sm">
               upcoming
             </span>
           )}
         </div>
         <h4 className="text-l font-semibold text-accent-700">Details:</h4>
-        <p className="text-lg text-primary-300">
+        <p className="text-sm md:text-base lg:text-lg text-primary-300">
           {format(new Date(date), "EEE, MMM dd yyyy")} {time} (
           {isToday(new Date(date)) ? "Today" : formatDistanceFromNow(date)})
         </p>
 
-        <p className="text-xs text-primary-300">
+        <p className="text-[8px] md:text-[10px] lg:text-xs text-primary-300">
           Nails: {testNails.name_nails}
         </p>
-        <p className="text-xs text-primary-300">Coments: {coments}</p>
+        <p className="text-[8px] md:text-[10px] lg:text-xs text-primary-300">
+          Coments: {coments}
+        </p>
         {status ? (
-          <p className="text-green-400 text-xs">Aproved by Sandra</p>
+          <p className="text-green-400 text-[8px] md:text-[10px] lg:text-xs">
+            Aproved by Sandra
+          </p>
         ) : (
-          <p className="text-red-400 text-xs">Wait for aproved by Sandra</p>
+          <p className="text-red-400 text-[8px] md:text-[10px] lg:text-xs">
+            Wait for aproved by Sandra
+          </p>
         )}
 
         <div className="flex gap-5 mt-auto items-baseline">
-          <p className="text-xl font-semibold text-accent-600">
+          <p className="text-sm md:text-base lg:text-xl font-semibold text-accent-600">
             From £{nails_price}
           </p>
 
-          <p className="ml-auto text-xs text-primary-500">
+          <p className="ml-auto text-[8px] md:text-[10px] lg:text-xs text-primary-500">
             Booked {format(new Date(created_at), "EEE, MMM dd yyyy, p")}
           </p>
         </div>
@@ -99,7 +105,7 @@ function ReservationCard({ onDelete, booking, nailName }) {
               className="group flex items-center gap-2 uppercase text-xs font-bold text-primary-300 border-b border-accent-800 flex-grow px-3 hover:bg-accent-600 transition-colors hover:text-primary-900"
             >
               <PencilSquareIcon className="h-5 w-5 text-primary-600 group-hover:text-primary-800 transition-colors" />
-              <span className="mt-1">Edit</span>
+              <span className="text-xs md:text-sm lg:text-base mt-1">Edit</span>
             </Link>
             <DeleteReservation onDelete={onDelete} bookingId={id} />
           </>

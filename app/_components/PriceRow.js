@@ -10,7 +10,7 @@ function PriceRow({ nails }) {
   };
   return (
     <>
-      <div className="border-2 border-accent-700 rounded-2xl p-4 m-2">
+      <div className="border-2 border-accent-700 rounded-2xl p-4 m-2 text-sm md:text-base lg:text-lg">
         {nails.map((nail) => (
           <div
             className="flex items-center justify-between m-3  text-accent-500 relative"
@@ -22,7 +22,7 @@ function PriceRow({ nails }) {
                   {nail.name_nails}
                   <span
                     onClick={() => toggleDescription(nail.id)}
-                    className="cursor-pointer relative ml-2 text-[10px] hover:text-accent-100 text-primary-700"
+                    className="cursor-pointer relative ml-2 text-[6px] md:text-[8px] lg:text-[10px] hover:text-accent-100 text-primary-700"
                   >
                     view
                   </span>

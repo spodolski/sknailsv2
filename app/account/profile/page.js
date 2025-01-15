@@ -11,7 +11,7 @@ export default async function Page() {
   const guest = await getGuest(session.user.email);
   return (
     <div>
-      <h1 className="text-center font-extrabold text-accent-100 text-4xl mt-2 mb-4">
+      <h1 className="text-center font-extrabold text-accent-100 text-lg md:text-2xl lg:text-4xl mt-2 mb-4">
         Update your guest profile
       </h1>
 

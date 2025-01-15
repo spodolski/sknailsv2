@@ -9,8 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <h1 className="text-center font-extrabold text-accent-100 text-4xl mt-2 mb-4">
-        {" "}
+      <h1 className="text-center font-extrabold text-accent-100 text-lg md:text-2xl lg:text-4xl mt-2 mb-4">
         Price List
       </h1>
       <div className="max-w-[800px] mx-auto">

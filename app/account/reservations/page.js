@@ -14,13 +14,13 @@ export default async function Page() {
 
   return (
     <div className="max-h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-accent-400 scrollbar-track-primary-400 scrollbar-track-rounded-full">
-      <h1 className="text-center font-extrabold text-accent-100 text-4xl mt-2 mb-4 ">
+      <h1 className="text-center font-extrabold text-accent-100 text-lg md:text-2xl lg:text-4xl mt-2 mb-4 ">
         Your reservations
       </h1>
 
       {bookings.length === 0 ? (
-        <p className="text-lg">
-          You have no reservations yet. Check out our{" "}
+        <p className="text-sm md:text-base lg:text-lg">
+          You have no reservations yet. Check out our
           <Link className="underline text-accent-500" href="/price">
             nails &rarr;
           </Link>

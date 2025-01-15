@@ -14,7 +14,7 @@ function ReservationForm({ datesTimes, nails, phone, user }) {
     <div className="">
       <form
         action={addBooking}
-        className="bg-primary-800  py-10 px-16 text-lg flex gap-5 flex-col"
+        className="bg-primary-800  py-10 px-16  text-sm md:text-base lg:text-lg flex gap-5 flex-col"
       >
         <input type="hidden" name="guest_id" value={user.guestId} />
         <input type="hidden" name="name" value={user.name} />
@@ -34,7 +34,7 @@ function ReservationForm({ datesTimes, nails, phone, user }) {
             name="nails"
             id="nails"
             disabled={!selected}
-            className="px-5 py-3  bg-primary-200 text-primary-800 w-full shadow-sm rounded"
+            className="px-5 py-3  bg-primary-200 text-accent-200 w-full shadow-sm rounded"
             required
           >
             <option value="" key="">
@@ -56,7 +56,7 @@ function ReservationForm({ datesTimes, nails, phone, user }) {
             name="time"
             id="name"
             disabled={!selected}
-            className="px-5 py-3  w-full shadow-sm rounded  bg-primary-200 text-primary-800"
+            className="px-5 py-3  w-full shadow-sm rounded  bg-primary-200 text-accent-200"
             required
           >
             <option value=" " key="">
@@ -93,7 +93,7 @@ function ReservationForm({ datesTimes, nails, phone, user }) {
             name="coments"
             id="coments"
             disabled={!selected}
-            className="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded"
+            className="px-5 py-3 bg-primary-200 text-accent-200 w-full shadow-sm rounded"
             placeholder="Any extra information"
           />
 
@@ -107,7 +107,7 @@ function ReservationForm({ datesTimes, nails, phone, user }) {
             name="phone"
             defaultValue={phone}
             required
-            className="px-5 py-3 bg-primary-200 text-accent-100 w-full shadow-sm rounded"
+            className="px-5 py-3 bg-primary-200 text-accent-200 w-full shadow-sm rounded"
           />
         </div>
 

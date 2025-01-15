@@ -10,13 +10,13 @@ export default async function Page({ params }) {
 
   return (
     <div className="">
-      <h1 className="text-center font-extrabold text-accent-100 text-4xl mt-2 mb-4">
+      <h1 className="text-center font-extrabold text-accent-100 text-lg md:text-2xl lg:text-4xl mt-2 mb-4">
         Edit Reservation #{bookingId}
       </h1>
 
       <form
         action={updateBooking}
-        className="bg-primary-900 py-8 px-12 text-lg flex gap-6 flex-col rounded-lg"
+        className="bg-primary-900 py-8 px-12 text-sm md:text-base lg:text-lg flex gap-6 flex-col rounded-lg"
       >
         <input type="hidden" value={bookingId} name="bookingId" />
         <label className="text-accent-700" htmlFor="nails">
@@ -25,7 +25,7 @@ export default async function Page({ params }) {
         <select
           name="nails"
           id="nails"
-          className="px-5 py-3  bg-primary-200 text-primary-800 w-full shadow-sm rounded"
+          className="px-5 py-3  bg-primary-200 text-accent-200 w-full shadow-sm rounded"
           required
         >
           <option value="" key="">
@@ -47,7 +47,7 @@ export default async function Page({ params }) {
           <textarea
             name="coments"
             defaultValue={coments}
-            className="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
+            className="px-5 py-3 bg-primary-200 text-accent-200 w-full shadow-sm rounded-sm"
           />
         </div>
 

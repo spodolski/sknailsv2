@@ -4,12 +4,15 @@ import logo from "@/public/skn.png";
 
 function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-4 z-10 ml-6 max-h-52">
+    <Link
+      href="/"
+      className="relative h-auto w-auto max-h-[110px] max-w-[110px] md:max-h-[210px] md:max-w-[210px]   aspect-square"
+    >
       <Image
+        className=" object-contain"
         src={logo}
-        height={300}
-        width={300}
-        sizes="(max-width: 20px)"
+        fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         alt="Sk Nails"
         priority={false}
       />

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <header className="mx-auto max-w-7xl">
           <Navigation />
         </header>
-        <main className="mx-auto max-w-6xl mainBG">
+        <main className="mx-auto max-w-6xl mainBG mb-[40px] md:mb-[70px] lg:mb-[100px]">
           <ReservationProvider>{children}</ReservationProvider>
         </main>
         <footer className="mx-auto max-w-6xl">

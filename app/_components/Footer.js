@@ -8,7 +8,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <div className="bg-primary-900/80 p-1 rounded-t-lg ">
-      <div className="flex justify-between items-center text-accent-600 max-w-[1200px]">
+      <div className="flex justify-between gap-3 text-sm md:text-md lg:text-base items-center text-accent-600 max-w-[1200px]">
         <div>
           <p className="text-center font-bold mb-6 ml-4">
             My home Nail Salon address
@@ -24,7 +24,7 @@ function Footer() {
           <p className="text-center font-bold mb-6 ">Follow me on</p>
           <div className="flex justify-between ">
             <Link
-              className="text-6xl"
+              className="text-2xl md:text-4xl lg:text-6xl"
               href="https://www.tiktok.com/@Nails_by_Sandra_Wiecek"
               target="_blank"
               rel="noreferrer"
@@ -32,7 +32,7 @@ function Footer() {
               <AiFillTikTok />
             </Link>
             <Link
-              className="text-6xl"
+              className="text-2xl md:text-4xl lg:text-6xl"
               href="https://www.instagram.com/nails_by_sandra_wiecek/"
               target="_blank"
               rel="noreferrer"
@@ -40,7 +40,7 @@ function Footer() {
               <FaSquareInstagram />
             </Link>
             <Link
-              className="text-6xl"
+              className="text-2xl md:text-4xl lg:text-6xl"
               href="https://www.facebook.com/profile.php?id=61562252641573"
               target="_blank"
               rel="noreferrer"
@@ -51,7 +51,7 @@ function Footer() {
             <WhatsApp />
           </div>
         </div>
-        <div className="mr-8">
+        <div className="mr-8 h-24 md:w-48 md:h-48 w-24 lg:h-[200px] lg:w-[200px]">
           <Image
             src="https://utjfaspanvjuqdpwbwwg.supabase.co/storage/v1/object/public/sknails/hba.png?t=2025-01-03T16%3A19%3A01.344Z"
             alt="hba logo"
@@ -60,7 +60,7 @@ function Footer() {
           />
         </div>
       </div>
-      <div className="text-center mt-4 text-sm text-accent-600">
+      <div className="text-center mt-4 text-xs text-accent-600">
         <Link
           href="https://sebastianpodolski.co.uk"
           target="_blank"

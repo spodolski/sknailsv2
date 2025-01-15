@@ -9,10 +9,10 @@ function DateSelector({ bookedDates }) {
 
   return (
     <div
-      className=" border-l-2 border-y-2 border-primary-800 flex flex-col
+      className=" border-l-2 border-y-2 border-2  border-primary-800 pb-4 flex flex-col
    "
     >
-      <div className=" text-accent-600 text-xl px-16 py-2 mt-4 mb-4 items-center">
+      <div className=" text-accent-600 text-sm md:text-base lg:text-lg px-16 py-2 mt-4 mb-4 items-center">
         <h2>1. Choice day first:</h2>
       </div>
       <DayPicker

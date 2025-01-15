@@ -8,8 +8,7 @@ function LoginMessage() {
         <Link href="/login" className="underline text-accent-500">
           login
         </Link>{" "}
-        to reserve this
-        <br /> cabin right now
+        to reserve appoitment right now
       </p>
     </div>
   );

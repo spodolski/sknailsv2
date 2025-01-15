@@ -20,7 +20,7 @@ async function Reservation() {
   const guest = await getGuest(session?.user.email);
 
   return (
-    <div className="grid grid-cols-2  min-h-[400px]">
+    <div className="grid grid-cols md:grid-cols-2  min-h-[400px]">
       <DateSelector nails={nails} bookedDates={bookedDates} />
       {session?.user ? (
         <ReservationForm
